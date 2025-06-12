@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import tailwindcss from '@tailwindcss/vite'
-import './App.css'
+import './styles/App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
