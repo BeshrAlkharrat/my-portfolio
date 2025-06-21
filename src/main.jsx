@@ -4,13 +4,15 @@ import * as React from "react"
 import { BrowserRouter, Link } from 'react-router'
 import './styles/main.scss'
 import NavigationBar from './components/NavigationBar.jsx'
+import RoutesCollector from './data/Routes.jsx'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <NavigationBar />
+    <BrowserRouter className="background">
+    <RoutesCollector />
+      
     </BrowserRouter>
   </StrictMode>,
 )
