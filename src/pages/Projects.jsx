@@ -1,8 +1,10 @@
 import NavigationBar from "../components/NavigationBar"
+import Project from "../components/Project"
+import "../styles/tailwind.css"
 function Projects(){
     return(<>
     <NavigationBar />
-    <h1>This is Projects page</h1>
+    <Project />
     </>)
 }
 export default Projects

@@ -10,7 +10,7 @@ import RoutesCollector from './data/Routes.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter className="background">
+    <BrowserRouter >
     <RoutesCollector />
       
     </BrowserRouter>
