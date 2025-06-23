@@ -3,12 +3,14 @@ import '../styles/tailwind.css'
 function NavigationBar() {
     return(
     <div className='flex justify-center m-10'>
-        <div className="bg-linear-to-r from-[hsl(214,75%,50%)] to-[hsl(214,86%,67%)] w-85 mx-auto my-5 h-15 text-gray-200 flex items-center justify-center gap-7 rounded-full shadow-xl" >
-            <Link to="/About" className="hover:text-[#A26769] text-[#F4A261]">About</Link>
-            <Link to="/" className="hover:text-[#4A637D] text-[#B5838D]">Home</Link>
-            <Link to="/Contact" className="hover:text-[#C5A880]">Contact</Link>
-            <Link to="/Projects" className="hover:text-[#C5A880]">Projects</Link>
-            
+        <div className=''>
+            <p className='text-[2rem] kapakana'>MBA</p>
+        </div>
+        <div className="bg-linear-to-r from-[hsl(214,75%,50%)] to-[hsl(214,86%,67%)] w-85 mx-auto my-5 h-15 text-gray-200  flex items-center justify-center gap-7 rounded-full shadow-xl" >
+            <Link to="/" className='hover:text-gray-300'>Home</Link>
+            <Link to="/Projects" className='hover:text-gray-300'>Projects</Link>
+            <Link to="/Contact" className='hover:text-gray-300'>Contact</Link>
+            <Link to="/About"  className='hover:text-gray-300'>About</Link>
         </div>
         <Link to="/Contact">
             <div className='flex w-35 h-12 bg-linear-to-r from-[hsl(214,75%,50%)] to-[hsl(214,86%,67%)] hover:from-[hsl(214,75%,45%)] hover:to-[hsl(214,86%,62%)] rounded-lg text-gray-200 items-center justify-center m-5 text-[1.5rem] font-bold'>

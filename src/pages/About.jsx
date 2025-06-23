@@ -1,10 +1,13 @@
 import NavigationBar from "../components/NavigationBar"
-import '../styles/main.scss'
+import '../styles/tailwind.css'
 
 function About(){
     return(<>
         <NavigationBar />
-        <h1>This is an About page</h1>
+        <div className="flex items-center justify-center">
+            <h1 className="text-[5rem]">About me</h1>
+            <p>Fron-End Developer</p>
+        </div>
     </>)
 }
 export default About

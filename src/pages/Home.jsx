@@ -42,7 +42,7 @@ function Home(){
         <ActivityTracker />
         <div className="flex flex-col items-center justify-center ">
             <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Services</h2>
-            <p className="m-5">Those are the services that I can provide</p>
+            <p className="m-5 mb-5 text-[3rem]">These are the services that I can provide</p>
             <ServiceCard />
         </div>
     </div>)
