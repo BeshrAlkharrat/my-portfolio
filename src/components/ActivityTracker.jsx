@@ -1,7 +1,7 @@
 import "../styles/tailwind.css"
 
 function ActivityTracker() {
-    return(<div className="flex w-125 h-40 mt-30 ml-5 bg-[rgba(255,255,255,0.04)] text-gray-200 justify-center items-center">
+    return(<div className="flex w-125 h-40 mt-30 ml-5 bg-[rgba(255,255,255,0.04)] text-gray-200 justify-center items-center rounded-[8px]">
         <div>
             <p className="text-gray-200 text-[2rem]">Projects</p>
         </div>
