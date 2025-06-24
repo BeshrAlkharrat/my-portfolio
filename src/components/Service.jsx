@@ -24,12 +24,12 @@ function ServiceCard(){
         title: "Portfolio & Personal Website Development",
         description: "Creating sleek, branded portfolios and personal websites to help professionals showcase their work and identity online."
     },]
-    return(<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+    return(<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center items-center">
         {services.map((service, index) => (
-    <div key={index} className="flex flex-col w-75 h-100 bg-[rgba(255,255,255,0.04)] rounded-[24px] items-center">
-        <img src={service.logo} alt={service.title} className="w-30 invert p-3"/>
-        <h3 className="text-gray-200 text-[1.5rem] p-5">{service.title}</h3>
-        <p className="text-[#B8B8B8] p-5">{service.description}</p>
+    <div key={index} className="flex flex-col w-75 h-100 bg-[rgba(255,255,255,0.04)] rounded-[24px] pt-8 items-center">
+        <img src={service.logo} alt={service.title} className="w-30 invert"/>
+        <h3 className="text-gray-200 text-[1.5rem] p-5 text-center">{service.title}</h3>
+        <p className="text-[#B8B8B8] pl-5 pr-5 text-center">{service.description}</p>
     </div>)
 )}
 </div>)
