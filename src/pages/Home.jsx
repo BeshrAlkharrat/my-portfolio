@@ -5,10 +5,11 @@ import ServiceCard from "../components/Service"
 import backgroundBlurr from "../assets/Vector.svg"
 import githubIcon from "../assets/github.svg"
 import linkdinIcon from "../assets/linkdin.svg"
+import personalPic from "../assets/profile-pic1.png"
 import '../styles/tailwind.css'
 function Home(){
     return(<div className="relative ml-10 mr-10">
-        <div className="z-1"><NavigationBar/></div>
+        <div className="z-1 "><NavigationBar/></div>
         <div className="flex w-125">
             <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold">Front-end Developer</span></h1>
         </div>
@@ -34,16 +35,23 @@ function Home(){
                     <img src={linkdinIcon} alt="LinkdIn link"/>
                 </button>
             </div>
-            {/* inner circle*/}
-            <div className="absolute rounded-full h-130 w-130 top-50 right-35 bg-[#4286F4]  opacity-30"></div>
-            {/* outer circle */}
-            <div className="absolute rounded-full h-160 w-160 top-35 right-20 bg-[#4286F4]  opacity-25"></div>
+            {/* This is the photo section */}
+            <div className="">
+                <img src={personalPic} alt="personal pic" className="absolute w-[800px] top-10 right-2 z-2 mask-bottom-circle"/>
+                {/* inner circle*/}
+                <div className="absolute rounded-full h-[520px] w-[520px] top-50 right-35 bg-[#4286F4] opacity-30"></div>
+                {/* outer circle */}
+                <div className="absolute rounded-full h-160 w-160 top-35 right-20 bg-[#4286F4] opacity-25"></div>
+            </div>
         </div>
         <ActivityTracker />
         <div className="flex flex-col items-center justify-center ">
             <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Services</h2>
             <p className="m-5 mb-5 text-[3rem]">These are the services that I can provide</p>
             <ServiceCard />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+            <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Skills</h2>
         </div>
     </div>)
 }

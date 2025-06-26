@@ -1,4 +1,5 @@
 import NavigationBar from "../components/NavigationBar"
+import personalPic from "../assets/profile-pic1.png"
 import '../styles/tailwind.css'
 import '../styles/main.scss'
 
@@ -22,7 +23,7 @@ function About(){
         </div>
         <div className="background-profile-about flex absolute w-[50%] h-[100%] left-10 mt-10 justify-center items-center">
             <div className="justify-center items-center w-150 h-200 rounded-t-full rounded-b-lg bg-[rgba(255,255,255,0.04)]">
-
+                <img src={personalPic} alt="Personal picture" className="absolute h-225 w-200 left-20 bottom-10 mask-bottom-center"/>
             </div>
         </div>
     </>)

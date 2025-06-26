@@ -3,4 +3,15 @@ body{
     background-color: #121212;
     color: white;
 }
-
+.mask-bottom-circle{
+    clip-path: ellipse(600px 740px at center top);
+}
+.mask-bottom-center{
+    clip-path: ellipse(1200px 865px at center top)
+}
+.selected-project{
+    transition: transform .5s
+}
+.selected-project:hover{
+    transform: scale(1.5);
+}
