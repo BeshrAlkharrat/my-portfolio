@@ -27,3 +27,9 @@ dist-ssr
 *.css.map
 *.sass.map
 *.scss.map
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
