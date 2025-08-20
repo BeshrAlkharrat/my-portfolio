@@ -7,6 +7,8 @@ import githubIcon from "../assets/github.svg"
 import linkdinIcon from "../assets/linkdin.svg"
 import personalPic from "../assets/profile-pic1.png"
 import '../styles/tailwind.css'
+import Footer from "../components/Footer"
+
 function Home(){
     return(<div className="relative ml-10 mr-10">
         <div className="z-1 "><NavigationBar/></div>
@@ -53,6 +55,7 @@ function Home(){
         <div className="flex flex-col items-center justify-center">
             <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Skills</h2>
         </div>
+        <div className=" bottom-0 w-full"> <Footer /> </div>
     </div>)
 }
 export default Home

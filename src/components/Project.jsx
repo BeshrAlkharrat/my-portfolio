@@ -1,9 +1,11 @@
+import {useRef} from "react"
 import "../styles/tailwind.css"
 import homePage from "../assets/home-page.png"
 import JavaScriptLogo from "../assets/javascript.svg"
 import reactLogo from "../assets/react-logo.svg"
 import tailwindCSSLogo from "../assets/tailwind.svg"
 import sassLogo from "../assets/sass.svg"
+
 
 function Project(){
     const project = [
