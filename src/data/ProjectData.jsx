@@ -12,7 +12,7 @@ export const projectData = [
         description: "This is my first project, which I built using React, TailwindCSS, and a little Sass.",
         techstack: [JavaScriptLogo, reactLogo, tailwindCSSLogo, sassLogo],
         Link: "/Projects/Project_1_Portfolio"
-    }
+    },
     // Add more projects as needed
 ]
 export const getProjectById = (id) => {

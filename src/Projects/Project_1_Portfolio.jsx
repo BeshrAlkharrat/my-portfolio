@@ -1,4 +1,4 @@
-import { getProjectById, getProjectByRoute } from "../data/ProjectData";
+import { getProjectById, getProjectByRoute } from "../data/ProjectData.jsx";
 import NavigationBar from "../components/NavigationBar";
 import "../styles/tailwind.css";
 
@@ -8,11 +8,9 @@ function Project_1_Portfolio() {
         <>
             <NavigationBar />
             <div className="flex flex-col justify-center z-1">
-                <h1 className="text-[5rem] text-center text-gray-200">Projects</h1>
-                <p className="text-[2rem] text-center mb-10">This is a list of all the projects that I have done.</p>
-            </div>
-            <div className="flex flex-col items-center justify-center">
-                
+                <div className="h-50 w-50" >
+                    <img src={projectId.previewphoto} alt="photo of the home page" className="w-full h-full"></img>
+                </div>
             </div>
         </>
     );

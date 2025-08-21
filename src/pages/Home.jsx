@@ -9,6 +9,7 @@ import personalPic from "../assets/profile-pic1.png"
 import '../styles/tailwind.css'
 import Footer from "../components/Footer"
 
+
 function Home(){
     return(<div><div className="relative ml-10 mr-10">
         <div className="z-1 "><NavigationBar/></div>
