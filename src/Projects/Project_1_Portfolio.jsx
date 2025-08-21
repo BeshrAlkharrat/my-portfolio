@@ -1,8 +1,9 @@
-import Project from "../components/Project";
+import { getProjectById, getProjectByRoute } from "../data/ProjectData";
 import NavigationBar from "../components/NavigationBar";
 import "../styles/tailwind.css";
 
 function Project_1_Portfolio() {
+    const projectId = getProjectById(1);
     return (
         <>
             <NavigationBar />
