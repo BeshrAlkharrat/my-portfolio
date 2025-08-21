@@ -10,7 +10,7 @@ import '../styles/tailwind.css'
 import Footer from "../components/Footer"
 
 function Home(){
-    return(<div className="relative ml-10 mr-10">
+    return(<div><div className="relative ml-10 mr-10">
         <div className="z-1 "><NavigationBar/></div>
         <div className="flex w-125">
             <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold">Front-end Developer</span></h1>
@@ -54,6 +54,8 @@ function Home(){
         </div>
         <div className="flex flex-col items-center justify-center">
             <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Skills</h2>
+        </div>
+        
         </div>
         <div className=" bottom-0 w-full"> <Footer /> </div>
     </div>)
