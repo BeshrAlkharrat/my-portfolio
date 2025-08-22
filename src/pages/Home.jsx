@@ -17,7 +17,7 @@ function Home(){
     return(<div ><div className="relative ml-10 mr-10">
         <div className="z-1 "><NavigationBar/></div>
         <div className="flex w-125">
-            <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold"><ReactTyped strings={["Front-end Developer"]} typeSpeed={100} /></span></h1>
+            <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold"><ReactTyped strings={["Front-end Developer"]} typeSpeed={150} /></span></h1>
         </div>
         <div className="flex" >
             {/*background blurr behind the buttons*/}
@@ -58,15 +58,15 @@ function Home(){
         <div className="flex flex-col items-center justify-center">
             <h2 className="mt-20 mb-5 text-[5rem] text-gray-200">Skills</h2>
             <div className="overflow-hidden w-full">
-                <div className="flex flex-nowrap justify-center items-center gap-20 animate-scroll w-full">
-                {skillsLogos.map((skill, index) => (
-                    <img key={index} className="w-50 h-75 m-2 invert hover:scale-125 duration-300 " src={skill.logo} alt={skill.name} title={skill.name} />
+                <div className="flex justify-center items-center gap-20 animate-scroll">
+                {skillsLogos.map((skill) => (
+                    <img key={skill.id} className="w-40 h-75 m-2 invert hover:scale-125 duration-300 translate-x-450" src={skill.logo} alt={skill.name} title={skill.name} />
+                ))}
+                {skillsLogos.map((skill) => (
+                    <img key={skill.id} className="w-40 h-75 m-2 invert hover:scale-125 duration-300 translate-x-450" src={skill.logo} alt={skill.name} title={skill.name} />
                 ))}
                 {skillsLogos.map((skill, index) => (
-                    <img key={index} className="w-50 h-75 m-2 invert hover:scale-125 duration-300" src={skill.logo} alt={skill.name} title={skill.name} />
-                ))}
-                {skillsLogos.map((skill, index) => (
-                    <img key={index} className="w-50 h-75 m-2 invert hover:scale-125 duration-300" src={skill.logo} alt={skill.name} title={skill.name} />
+                    <img key={index} className="w-40 h-75 m-2 invert hover:scale-125 duration-300 translate-x-450" src={skill.logo} alt={skill.name} title={skill.name} />
                 ))}
                 
             </div>
