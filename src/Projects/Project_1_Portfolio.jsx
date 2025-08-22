@@ -1,16 +1,17 @@
-import { getProjectById, getProjectByRoute } from "../data/ProjectData.jsx";
 import NavigationBar from "../components/NavigationBar";
+import ProjectArticle from "../components/ProjectArticle.jsx";
 import "../styles/tailwind.css";
+import { useParams } from "react-router";
+
 
 function Project_1_Portfolio() {
-    const projectId = getProjectById(1);
+    const { id } = useParams();
+    
     return (
         <>
             <NavigationBar />
-            <div className="flex flex-col justify-center z-1">
-                <div className="h-50 w-50" >
-                    <img src={projectId.previewphoto} alt="photo of the home page" className="w-full h-full"></img>
-                </div>
+            <div className="min-h-screen h-full w-full flex flex-col items-center justify-center">
+                <ProjectArticle id={parseInt(id)} />
             </div>
         </>
     );

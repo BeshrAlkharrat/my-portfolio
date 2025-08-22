@@ -12,7 +12,7 @@ function RoutesCollector(){
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Projects" element={<Projects />} />
-            <Route path="/Projects/Project_1_Portfolio" element={<Project_1_Portfolio />} />
+            <Route path="/Projects/:id" element={<Project_1_Portfolio />} />
             {/* Add more routes as needed */}
         </Routes>
     )
