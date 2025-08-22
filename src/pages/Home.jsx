@@ -6,15 +6,18 @@ import backgroundBlurr from "../assets/Vector.svg"
 import githubIcon from "../assets/github.svg"
 import linkdinIcon from "../assets/linkdin.svg"
 import personalPic from "../assets/profile-pic1.png"
+import { skillsLogos } from "../data/SkillsLogos"
 import '../styles/tailwind.css'
+import "../styles/main.scss"
 import Footer from "../components/Footer"
+import { ReactTyped } from "react-typed"
 
 
 function Home(){
-    return(<div><div className="relative ml-10 mr-10">
+    return(<div ><div className="relative ml-10 mr-10">
         <div className="z-1 "><NavigationBar/></div>
         <div className="flex w-125">
-            <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold">Front-end Developer</span></h1>
+            <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold"><ReactTyped strings={["Front-end Developer"]} typeSpeed={100} /></span></h1>
         </div>
         <div className="flex" >
             {/*background blurr behind the buttons*/}
@@ -38,22 +41,39 @@ function Home(){
                     <img src={linkdinIcon} alt="LinkdIn link"/>
                 </button>
             </div>
-            {/* This is the photo section */}
-            <div className="">
+            
+        </div>
+
+        {/* This is the photo section */}
+            <div className="w-screen h-full">
                 <img src={personalPic} alt="personal pic" className="absolute w-[800px] top-10 right-2 z-2 mask-bottom-circle"/>
                 {/* inner circle*/}
                 <div className="absolute rounded-full h-[520px] w-[520px] top-50 right-35 bg-[#4286F4] opacity-30"></div>
                 {/* outer circle */}
                 <div className="absolute rounded-full h-160 w-160 top-35 right-20 bg-[#4286F4] opacity-25"></div>
             </div>
-        </div>
         <ActivityTracker />
 
+        {/* This is the skills animation section */}
         <div className="flex flex-col items-center justify-center">
-            <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Skills</h2>
+            <h2 className="mt-20 mb-5 text-[5rem] text-gray-200">Skills</h2>
+            <div className="overflow-hidden w-full">
+                <div className="flex flex-nowrap justify-center items-center gap-20 animate-scroll w-full">
+                {skillsLogos.map((skill, index) => (
+                    <img key={index} className="w-50 h-75 m-2 invert hover:scale-125 duration-300 " src={skill.logo} alt={skill.name} title={skill.name} />
+                ))}
+                {skillsLogos.map((skill, index) => (
+                    <img key={index} className="w-50 h-75 m-2 invert hover:scale-125 duration-300" src={skill.logo} alt={skill.name} title={skill.name} />
+                ))}
+                {skillsLogos.map((skill, index) => (
+                    <img key={index} className="w-50 h-75 m-2 invert hover:scale-125 duration-300" src={skill.logo} alt={skill.name} title={skill.name} />
+                ))}
+                
+            </div>
+            </div>
         </div>
         <div className="flex flex-col items-center justify-center ">
-            <h2 className="mt-40 mb-5 text-[5rem] text-gray-200">Services</h2>
+            <h2 className="mt-20 mb-5 text-[5rem] text-gray-200">Services</h2>
             <p className="m-5 mb-5 text-[3rem]">These are the services that I can provide</p>
             <ServiceCard />
         </div>

@@ -9,9 +9,21 @@ body{
 .mask-bottom-center{
     clip-path: ellipse(1200px 865px at center top)
 }
-.selected-project:hover{
-    .bottom-section{
-        transform: translateY(0);
-    }
-
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%); /* move half width because you duplicated logos */
+  }
 }
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+
+  animation-play-state: running;
+}
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
+
