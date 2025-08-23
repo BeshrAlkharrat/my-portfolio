@@ -14,12 +14,12 @@ import { ReactTyped } from "react-typed"
 
 
 function Home(){
-    return(<div ><div className="relative ml-10 mr-10">
+    return(<div ><div className="relative ">
         <div className="z-1 "><NavigationBar/></div>
-        <div className="flex w-125">
+        <div className="flex w-125 ml-10">
             <h1 className="font-bold text-gray-200 text-[2rem] mx-5">Hi! My name is Beshr Alkharrat, and I am a <span className="flex text-[#4286F4] text-[3rem] font-bold"><ReactTyped strings={["Front-end Developer"]} typeSpeed={150} /></span></h1>
         </div>
-        <div className="flex" >
+        <div className="flex ml-10" >
             {/*background blurr behind the buttons*/}
             <img src={backgroundBlurr} className="absolute top-0 z-0 pointer-events-none select-none"/>
             <Link to="/Contact" className='z-1'>
@@ -33,7 +33,7 @@ function Home(){
         </div>
         <div>
             {/*social media buttons */}
-            <div className="flex z-1 ">
+            <div className="flex z-1 ml-10 mt-3">
                 <button className="flex w-15 h-15 rounded-full mx-5 bg-gray-200 cursor-pointer z-1" onClick={() => window.open('https://github.com/BeshrAlkharrat', '_blank')}>
                     <img src={githubIcon} />
                 </button>
@@ -52,6 +52,7 @@ function Home(){
                 {/* outer circle */}
                 <div className="absolute rounded-full h-160 w-160 top-35 right-20 bg-[#4286F4] opacity-25"></div>
             </div>
+            
         <ActivityTracker />
 
         {/* This is the skills animation section */}

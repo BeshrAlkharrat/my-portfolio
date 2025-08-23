@@ -1,6 +1,8 @@
 import NavigationBar from "../components/NavigationBar"
 import Project from "../components/Project"
 import "../styles/tailwind.css"
+import Footer from "../components/Footer"
+
 function Projects(){
 const projectAmmount = 0;
     return(<>
@@ -11,6 +13,9 @@ const projectAmmount = 0;
     </div>
     <div className="flex flex-col items-center justify-center">
         <Project />
+    </div>
+    <div className="w-full">
+        <Footer />
     </div>
     </>)
 }
